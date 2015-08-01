@@ -1,8 +1,8 @@
 #!/bin/bash
 
-portable="/cygdrive/c/Portable/"
+searchedDir="/cygdrive/c/Portable/"
 
-find $portable -maxdepth 3 -type f \( -iname \*.exe -o -iname \*.ahk -o -iname \*.bat \) -exec bash -c '
+find $searchedDir -maxdepth 3 -type f \( -iname \*.exe -o -iname \*.bat \) -exec bash -c '
 
 # variables
 dest="/cygdrive/c/Users/Denis/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Administrative Tools"
@@ -37,5 +37,3 @@ echo Creating shortcut for "$arg3"
 ' \;
 
 echo Finished
-
-#example: nir shortcut C:\\Portable\\Window\\ResSwitch\\ResSwitch.exe C:\\Users\\Denis\\AppData\\Roaming\\Microsoft\\Windows\\Start\ Menu\\Programs\\Administrative\ Tools\\ hi2
