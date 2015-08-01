@@ -32,7 +32,7 @@ arg3="$result"
 
 # final command
 echo Creating shortcut for "$arg3"
-#$nir shortcut "$arg1" "$arg2"\\\\ "$arg3" 
+$nir shortcut "$arg1" "$arg2"\\\\ "$arg3" 
 
 ' \;
 
